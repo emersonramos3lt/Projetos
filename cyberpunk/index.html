@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Neuro</h1>
+    </header>
+
+    <main>
+        <h2>O Cyberpunk: A Fusão de Tecnologia e Distorção Social</h2>
+
+    <div class="carousel">
+        <div class="images">
+            <img src="cyberpunk1.jpg" alt="Imagem 1">
+            <img src="cyberpunk2.jpg" alt="Imagem 2">
+            <img src="cyberpunk3.jpg" alt="Imagem 3">
+            
+        </div>
+        <div class="navigation">
+            <button class="prev">Anterior</button>
+            <button class="next">Próxima</button>
+        </div>
+    </div>
+    
+
+    <p>O gênero cyberpunk é uma manifestação literária, cinematográfica e cultural que floresceu nas últimas décadas do século XX e continuou a desempenhar um papel significativo na cultura pop do século XXI. O termo "cyberpunk" é uma combinação de "cybernetics" (a ciência do controle e comunicação em animais e máquinas) e "punk" (uma atitude de resistência contra a autoridade estabelecida e a ordem social). Este gênero é caracterizado pela fusão de tecnologia avançada, distorção social e uma atmosfera futurista sombria. O gênero cyberpunk explora questões complexas e universais, como a relação entre a humanidade e a tecnologia, a concentração de poder, o controle corporativo e o impacto das mudanças sociais e tecnológicas no indivíduo.
+
+        Um dos pilares fundamentais do gênero cyberpunk é a ambientação. As histórias geralmente ocorrem em futuros distópicos, onde as megacorporações têm um poder desenfreado e a desigualdade social atingiu níveis extremos. A tecnologia desempenha um papel central, com implantes cibernéticos, realidade virtual, hacking e inteligência artificial sendo elementos comuns nas narrativas. O contraste entre a alta tecnologia e a decadência urbana é uma característica marcante, criando um ambiente tenso e opressivo.
+    
+        Os protagonistas do cyberpunk são frequentemente anti-heróis, marginais ou hackers que desafiam o sistema e lutam contra as forças opressoras. Eles são movidos por um senso de justiça e resistência, muitas vezes operando nas sombras para expor a corrupção das megacorporações ou para proteger a liberdade individual. Esse foco nos personagens solitários e rebeldes é uma extensão do "punk" no gênero.
+    </p>
+
+    <p>A cibercultura e a tecnologia desempenham um papel crucial no cyberpunk. As histórias frequentemente exploram as consequências da fusão entre humanos e máquinas, levantando questões éticas sobre a modificação do corpo e a perda de privacidade. O hacking é uma habilidade valiosa e perigosa no mundo cyberpunk, frequentemente usado para revelar segredos obscuros ou para ganhar vantagem sobre os poderosos.
+
+        As obras mais icônicas do gênero incluem o romance "Neuromancer" de William Gibson, o filme "Blade Runner" de Ridley Scott e o jogo de vídeo "Deus Ex". Além disso, o estilo visual do cyberpunk influenciou a moda, a música e a arte contemporânea, criando uma estética distinta que é instantaneamente reconhecível.
+        
+        Em resumo, o cyberpunk é muito mais do que um simples gênero de ficção científica. É uma reflexão sobre as complexas interações entre tecnologia, sociedade e poder. Aborda questões relevantes sobre nossa relação com a tecnologia, o futuro da humanidade e a necessidade de resistir às forças que podem ameaçar nossas liberdades individuais. Como uma visão distópica do futuro, o cyberpunk nos lembra que, apesar dos avanços tecnológicos, os dilemas humanos fundamentais persistem, e a luta pela liberdade e justiça continua a ser uma busca constante.</p>
+
+    </main>
+      <script>
+    const images = document.querySelector('.images');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+let currentIndex = 0;
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + 3) % 3;
+    updateCarousel();
+});
+
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % 3;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    const translateValue = currentIndex * -300;
+    images.style.transform = `translateX(${translateValue}px)`;
+}
+
+
+      </script>
+</body>
+</html>

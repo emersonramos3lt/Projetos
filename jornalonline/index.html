@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jornal Online</h1>
+        <button id="theme-toggle">Alterar Tema</button>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Economia</a></li>
+            <li><a href="">Saúde</a></li>
+            <li><a href="">Politica</a></li>
+        </ul>
+    </nav>
+    
+    <img src="tokyo-photo.jpg" alt="foto da metropole de toquio">
+    <h1><a href="pagina02.html" class="link-personalizado">Tóquio: A Metrópole do Futuro no Coração do Japão</a></h1>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+    
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('light-theme')) {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+            } else {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+            }
+        });
+    </script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    HTML para o botão personalizado com um ícone:
+    Agora, crie o HTML para o botão personalizado com o ícone:
+    
+    html
+    Copy code
+    <button id="theme-toggle" class="theme-button">
+        <i class="fas fa-adjust"></i> Alterar Tema
+    </button>
+    Neste exemplo, estamos usando o ícone "adjust" do Font Awesome.
+    
+    Personalize o botão com CSS:
+    Aplique estilos CSS para personalizar o botão. Aqui está um exemplo simples:
+    
+    css
+    Copy code
+    /* Estilos para o botão */
+    .theme-button {
+        background-color: #0074d9;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .theme-button i {
+        margin-right: 5px; /* Espaço entre o ícone e o texto */
+    }
+    Agora, o botão terá um fundo azul, texto branco e um ícone "adjust" antes do texto.
+    
+    Lembre-se de ajustar os estilos de acordo com o design geral do seu site.
+    
+    Com essas alterações, você terá um botão personalizado com um ícone para alternar entre os temas claro e escuro em seu site. Certifique-se de que a classe fas fa-adjust corresponda ao ícone Font Awesome que você deseja usar. Você pode encontrar ícones adequados no site oficial do Font Awesome.
+    
+    
+    
+    
+    User
+    <button id="theme-toggle">Alterar Tema</button> eu coloco essa linha de códigos entra qual tag, por exemplo no Head ou no body?
+    ChatGPT
+    Você deve colocar o botão dentro da tag <body> do seu documento HTML, não no <head>. O conteúdo visível para os visitantes do seu site, como botões e texto, deve estar dentro da tag <body>. O <head> é geralmente usado para metadados, scripts e links para estilos e fontes, entre outros elementos, mas não para o conteúdo visível.
+    
+    Aqui está um exemplo de como incluir o botão no <body> do seu documento HTML:
+    
+    html
+    Copy code
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <!-- Aqui você pode adicionar metadados, links para estilos, scripts, etc. -->
+    </head>
+    <body>
+        <!-- Conteúdo visível para os visitantes, incluindo o botão -->
+        <button id="theme-toggle">Alterar Tema</button>
+        <!-- Outros elementos do seu site aqui -->
+    </body>
+    </html>
+    Dessa forma, o botão "Alterar Tema" será exibido na parte visível do seu site, dentro da tag <body>. Certifique-se de incluir o restante do código HTML, CSS e JavaScript necessário para implementar a funcionalidade de alternância de tema ao redor desse botão.
+    
+    
+    
+    
+    
+    
+</body>
+</html>

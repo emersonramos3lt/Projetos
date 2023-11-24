@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jornal Online</h1>
+        <button id="theme-toggle">Alterar Tema</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Economia</a></li>
+            <li><a href="">Saúde</a></li>
+            <li><a href="">Politica</a></li>
+        </ul>
+    </nav>
+    
+    <img src="tokyo-photo.jpg" alt="foto da metropole de toquio">
+    <h1><a href="pagina02.html" class="link-personalizado">Tóquio: A Metrópole do Futuro no Coração do Japão</a></h1>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+    
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('light-theme')) {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+            } else {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+            }
+        });
+    </script>
+</body>
+</html>

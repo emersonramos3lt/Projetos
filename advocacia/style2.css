@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.textodeapoio {
+    width: 600px;
+    padding: 10px;
+    margin: 150px auto 10px auto;
+}
+
+.textodeapoio h1, .textodeapoio p {
+    animation: none;
+}
+
+header {
+    background-color: #080708;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    width: 100%; 
+    z-index: 100;
+    font-family: 'Merriweather', serif;
+
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.link {
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 20px;
+}
+
+.link a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.link a:hover::before {
+    width: 100%;
+}
+
+.textodeapoio h1 {
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    font-family: 'Lora', serif;
+    animation: appear 1s;
+}
+
+.textodeapoio p {   
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+    animation: appear 1s;
+}
+
+.container {
+    padding: 20px; 
+    display: inline-block;
+}
+
+.plano {
+    animation: appear 1s;
+    border: 1px solid #000; 
+    border-radius: 20px;
+    padding: 30px;
+    transform: scale(1.4) translate(430px);
+    margin-bottom: 150px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.assinar {
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+}
+
+.assinar:hover {
+    background-color: black;
+    color: white;
+}
+
+span {
+    color: rgb(255, 0, 0);
+}
+
+img {
+    transform: scale(0.3);
+}
+
+.textodeapoio2 {
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.textodeapoio2 h1 {
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    font-family: 'Lora', serif;
+    animation: appear 1s;
+}
+
+.textodeapoio2 p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+    animation: appear 1s;
+}
+
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        translate: -100vw;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+

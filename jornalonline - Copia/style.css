@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+nav {
+    background-color: brown;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header {
+    background-color: brown;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 800px;
+}
+
+.link-personalizado {
+    text-decoration: none;
+    color: black;
+}
+
+.link-personalizado:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+article {
+    border: 1px solid #333;
+    
+}
+
+body {
+    background-color: #333;
+    color: #ddd;
+}
+
+body.light-theme {
+    background-color: #ffffff;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #ffffff;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.article {
+    flex: 1;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    top: 210px;
+    right: 0;
+   
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 40px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+

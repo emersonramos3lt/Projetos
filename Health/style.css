@@ -1,0 +1,82 @@
+header {
+    background-color: #49c2b0;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+nav {
+    background-color: #73eedc;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+
+.noticia {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.link-personalizado {
+    text-decoration: none;
+    color: black;
+}
+
+.link-personalizado:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    transform: scale(0.5);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+}
+
+img {
+    width: 60%;
+    height: auto;
+}
+
+main {
+    background-color: whitesmoke;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+
+.letra-grande {
+    font-size: 4em;
+}
+
+
+
+

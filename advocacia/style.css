@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:ital,wght@1,300&display=swap');
+
+:root {
+    --scroll-height: 25px;
+}
+
+section {
+    font-size: 1.5rem;
+    margin-inline: auto;
+    padding-block: var(--scroll-height);
+    width: min(60ch, 100%);
+    margin-top: 200px;
+}
+
+.textoanimado, p {
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+    margin-top: 80px;
+    font-family: 'Lora', serif;
+}
+
+.textoanimado h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+
+
+img {
+    width: 600px;
+    animation: reveal 1ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+}
+
+header {
+    background-color: #080708;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    width: 100%; 
+    z-index: 100;
+    font-family: 'Merriweather', serif;
+
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.link {
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 20px;
+}
+
+.link a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.link a:hover::before {
+    width: 100%;
+}
+
+.copyright {
+    background-color: #080708;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: 13px;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    font-size: 1.5rem;
+    margin-inline: auto;
+    padding-block: var(--scroll-height);
+    width: min(60ch, 100%);
+    margin-top: 200px;
+}
+
+main span {
+    color: red;
+}
+
+.listempresa {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    margin-inline: auto;
+    padding-block: var(--scroll-height);
+    width: min(60ch, 100%);
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 35%;
+}
+
+.listempresa span {
+    color: red;
+}
+
+.container {
+    display: block;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+
+h1 {
+    font-family: 'Merriweather', serif;
+}
+
+.botao {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.botao:hover {
+    background-color: green;
+}
+
+
+
+
+    
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes scroll {
+    from {
+        scale: 0 1;      
+    }
+
+    to {
+        scale: 1 1;
+
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
