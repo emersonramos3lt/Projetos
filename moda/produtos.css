@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    margin: 0;
+    margin: 0px;
 }
 
 header {
@@ -80,13 +80,10 @@ main {
     margin: auto;
 }
 
-main h1 {
-    color: #04724d;
+main h1, h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-main h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #99a3a2;
 }
 
 main p {
@@ -94,14 +91,43 @@ main p {
     line-height: 30px;
 }
 
+main ul li {
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
 span {
-    color: #04724d;
     font-weight: bold;
+    color: #99a3a2;
 }
 
 img {
-    max-height: 500px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: auto;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-carrinho {
+    background-color: white;
+    color: #99a3a2;
+    padding: 15px 30px;
+    border-radius: 1px solid #b3b8b7;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.add-carrinho:hover {
+    background-color: #b3b8b7;
+    color: white;
 }

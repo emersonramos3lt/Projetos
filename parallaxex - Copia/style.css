@@ -9,6 +9,8 @@ body {
     height: 100vh;
     margin: 0;
     perspective: 1px;
+    overflow-x: hidden;
+    background-color: #235789;
 }
 
 
@@ -25,6 +27,7 @@ body {
     position: absolute;
     background: url(patagonia.jpg) top center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .section2::before {
@@ -35,6 +38,7 @@ body {
     background: url(patagonia4.jpg) top center;
     background-size: cover;
     background-repeat: cover;
+    background-attachment: fixed;
 }
 
 .section3::before {
@@ -44,6 +48,7 @@ body {
     position: absolute;
     background: url(patagonia3.jpg) top center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -57,29 +62,29 @@ body {
     left: 50%;
     position: absolute;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 13vw;
+    font-size: 12vw;
     color: white;
     text-shadow: 2px 2px 5px black, 5px 5px 70px rgba(255, 255, 255, 0.5);
     transform: scale(1,1.1) translate(-50%, 10%);
 }
 
 .section2 .text {
-    top: 30%;
+    top: 50%;
     left: 50%;
     position: absolute;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 13vw;
+    font-size: 12vw;
     color: white;
     text-shadow: 2px 2px 5px black, 5px 5px 70px rgba(255, 255, 255, 0.5);
     transform: scale(1,1.1) translate(-50%, 10%);
 }
 
 .section1 .text {
-    top: 10%;
+    top: 20%;
     left: 50%;
     position: absolute;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 13vw;
+    font-size: 12vw;
     color: white;
     text-shadow: 2px 2px 5px black, 5px 5px 70px rgba(255, 255, 255, 0.5);
     transform: scale(1,1.1) translate(-50%, 10%);
@@ -89,7 +94,33 @@ body {
     background: lightcoral;
 }
 
+main {
+    background-color: #235789;
+    padding: 20px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
 
+.finalizacao {
+    background-color: #235789;
+    padding: 20px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.finalizacao p {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 20px;
+    color: #fff;
+}
+
+main p {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 20px;
+    color: #fff;
+}
 
 
 
@@ -104,7 +135,7 @@ header {
 
 header h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 h2 {
@@ -150,12 +181,6 @@ nav a::before {
 nav a:hover::before {
     visibility: visible;
     transform: scaleX(1);
-}
-
-header p {
-    margin: 0px;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 header h2 {
